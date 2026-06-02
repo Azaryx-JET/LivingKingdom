@@ -1,7 +1,5 @@
 extends Camera2D
 
-# Caméra existante conservée : ZQSD/WASD déplacent la vue sur la grande carte.
-
 @export var speed := 700.0
 
 func _ready() -> void:
