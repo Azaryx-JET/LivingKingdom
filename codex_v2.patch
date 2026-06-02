@@ -1,0 +1,946 @@
+diff --git a/Main.tscn b/Main.tscn
+deleted file mode 100644
+index 2d7cfb4ec8cc63921454cdcd22d0afb1438fa606..0000000000000000000000000000000000000000
+--- a/Main.tscn
++++ /dev/null
+@@ -1,155 +0,0 @@
+-[gd_scene format=3 uid="uid://covuh0scwrx23"]
+-
+-[ext_resource type="Script" uid="uid://y3gu6a0p7xfi" path="res://main.gd" id="1_fos0i"]
+-[ext_resource type="Script" uid="uid://cb4xy4850eirp" path="res://camera_2d.gd" id="2_lgr22"]
+-[ext_resource type="Texture2D" uid="uid://k382xr1ylscd" path="res://Tilemap/tilemap.png" id="3_r0du0"]
+-
+-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cm0pq"]
+-texture = ExtResource("3_r0du0")
+-0:0/0 = 0
+-1:0/0 = 0
+-2:0/0 = 0
+-3:0/0 = 0
+-4:0/0 = 0
+-5:0/0 = 0
+-6:0/0 = 0
+-7:0/0 = 0
+-8:0/0 = 0
+-9:0/0 = 0
+-10:0/0 = 0
+-11:0/0 = 0
+-0:1/0 = 0
+-1:1/0 = 0
+-2:1/0 = 0
+-3:1/0 = 0
+-4:1/0 = 0
+-5:1/0 = 0
+-6:1/0 = 0
+-7:1/0 = 0
+-8:1/0 = 0
+-10:1/0 = 0
+-11:1/0 = 0
+-0:2/0 = 0
+-1:2/0 = 0
+-2:2/0 = 0
+-3:2/0 = 0
+-4:2/0 = 0
+-5:2/0 = 0
+-6:2/0 = 0
+-7:2/0 = 0
+-8:2/0 = 0
+-9:2/0 = 0
+-10:2/0 = 0
+-11:2/0 = 0
+-0:3/0 = 0
+-1:3/0 = 0
+-2:3/0 = 0
+-3:3/0 = 0
+-4:3/0 = 0
+-5:3/0 = 0
+-6:3/0 = 0
+-7:3/0 = 0
+-8:3/0 = 0
+-9:3/0 = 0
+-10:3/0 = 0
+-11:3/0 = 0
+-0:4/0 = 0
+-1:4/0 = 0
+-2:4/0 = 0
+-3:4/0 = 0
+-4:4/0 = 0
+-5:4/0 = 0
+-6:4/0 = 0
+-7:4/0 = 0
+-8:4/0 = 0
+-9:4/0 = 0
+-10:4/0 = 0
+-11:4/0 = 0
+-0:5/0 = 0
+-1:5/0 = 0
+-2:5/0 = 0
+-3:5/0 = 0
+-4:5/0 = 0
+-5:5/0 = 0
+-6:5/0 = 0
+-7:5/0 = 0
+-8:5/0 = 0
+-9:5/0 = 0
+-10:5/0 = 0
+-11:5/0 = 0
+-0:6/0 = 0
+-1:6/0 = 0
+-2:6/0 = 0
+-3:6/0 = 0
+-4:6/0 = 0
+-5:6/0 = 0
+-6:6/0 = 0
+-7:6/0 = 0
+-8:6/0 = 0
+-9:6/0 = 0
+-10:6/0 = 0
+-11:6/0 = 0
+-0:7/0 = 0
+-1:7/0 = 0
+-2:7/0 = 0
+-3:7/0 = 0
+-4:7/0 = 0
+-5:7/0 = 0
+-6:7/0 = 0
+-7:7/0 = 0
+-8:7/0 = 0
+-9:7/0 = 0
+-10:7/0 = 0
+-11:7/0 = 0
+-0:8/0 = 0
+-1:8/0 = 0
+-2:8/0 = 0
+-3:8/0 = 0
+-4:8/0 = 0
+-5:8/0 = 0
+-6:8/0 = 0
+-7:8/0 = 0
+-8:8/0 = 0
+-9:8/0 = 0
+-10:8/0 = 0
+-11:8/0 = 0
+-0:9/0 = 0
+-1:9/0 = 0
+-2:9/0 = 0
+-3:9/0 = 0
+-4:9/0 = 0
+-5:9/0 = 0
+-6:9/0 = 0
+-7:9/0 = 0
+-8:9/0 = 0
+-9:9/0 = 0
+-10:9/0 = 0
+-11:9/0 = 0
+-0:10/0 = 0
+-1:10/0 = 0
+-2:10/0 = 0
+-3:10/0 = 0
+-4:10/0 = 0
+-5:10/0 = 0
+-6:10/0 = 0
+-7:10/0 = 0
+-8:10/0 = 0
+-9:10/0 = 0
+-10:10/0 = 0
+-11:10/0 = 0
+-
+-[sub_resource type="TileSet" id="TileSet_fos0i"]
+-sources/0 = SubResource("TileSetAtlasSource_cm0pq")
+-
+-[node name="Main" type="Node2D" unique_id=2034550478]
+-script = ExtResource("1_fos0i")
+-
+-[node name="Camera2D" type="Camera2D" parent="." unique_id=2124540391]
+-script = ExtResource("2_lgr22")
+-
+-[node name="Node2D (Units)" type="Node2D" parent="." unique_id=2073175926]
+-
+-[node name="Node2D (Villages)" type="Node2D" parent="." unique_id=926618826]
+-
+-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1721284658]
+-tile_set = SubResource("TileSet_fos0i")
+diff --git a/assets/tiny_town/houses/door_wood.png b/assets/tiny_town/houses/door_wood.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..df9febc72071ae17b3125938f15109dbb2343b08
+GIT binary patch
+literal 155
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!93?!50ihlx9Ea{HEjtmSN`?>!lvI6-$0X`wF
+zKzeVEm%W<dtED;G$Ncqxe8!R>zhDN3XE)M-99>Tr#}JO|$sDXqZ9o41-*0r~|NsBf
+xAKqUT`dhMYZPeCz55<|816@Rz4+pU@GEC=@D{-;%^Z;sP@O1TaS?83{1OUtyEsFpE
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/houses/roof_red_left.png b/assets/tiny_town/houses/roof_red_left.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..f94e72d7979b58daad8cbf6de9df13dfff813bda
+GIT binary patch
+literal 180
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!73?$#)eFPF<Nq6*hWMJ6X&;2Kn704F~@CkAK
+zv!}m%_Lc*u?|f=WvR5-a>}`73MEx01*4NX;F@)o~Z`VQ20|q?ItVfwkTKxnJ?j2y3
+zX!#z$lxexicY))IPuTX`Fn^MpV5<--EvTGx@>iGVs<#%CzZ8Ub>Za_B^*$;U`}}69
+ap#Hke@;NMPLKgxJX7F_Nb6Mw<&;$TsMm`h(
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/houses/roof_red_mid.png b/assets/tiny_town/houses/roof_red_mid.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..ce3488793be62e6bf9b1f66fa62588061287b084
+GIT binary patch
+literal 178
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!73?$#)eFPF<Nq6*hWMJ6X&;2Kn704F~@CkA4
+zp1tM3={tY+^xLZ$ericN>}^^wQ*aSb*4xv?F@)oK>Y0PQ2Mjoz1J_>=U1i{C-f@QM
+z#GCzIolTdV@1Jyve~@YMILl&FqsZPj3rl(=x0G_8wpM=I9r{9L)oaC2TeVfuTmRbc
+YKXFaoTfv{F6=*Djr>mdKI;Vst0PcE0U;qFB
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/houses/roof_red_right.png b/assets/tiny_town/houses/roof_red_right.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..d04ac27fedd9c6585584d2bbfa2ef29dbff97b95
+GIT binary patch
+literal 181
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!73?$#)eFPF<Nq6*hWMJ6X&;2Kn704F~@CkA4
+zp1tM3={tY+^nYqevR5-a>}|R?w|yH>*3Z+$F@)oKXwN~;0|q?Id!52FPB4kyJ0N@`
+z<A3NXwPjnre^lg)Hu-jHBWL!Z9h}Tu@9qUf9h*Ai{G`e1ljrYXkrAr$p89IxjMe{Y
+duU(ukt@K9TanFujeL#~LJYD@<);T3K0RZkGM6&<@
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/houses/wall_red_left.png b/assets/tiny_town/houses/wall_red_left.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..ec8d299b0f146ca703bc3d622a6593d80fef008f
+GIT binary patch
+literal 177
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!73?$#)eFPF<Nq6*hWMJ6X&;2Kn704F~@CkA4
+zp1mb1v*XX6etR{;Pc2D@y-lkvc@2QFUY;(FAsp9xdk*p*FyLU`>lD7?2un`DL8gg&
+z|7)>M`uF<!Nh?_!2~X8Ok%==|mqmNCU6-4qv(mA$L8p4&Hg>z6&6j@$_t{#kyUG1^
+XhT={B-F%!tQyDy6{an^LB{Ts5J(@f*
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/houses/wall_red_mid.png b/assets/tiny_town/houses/wall_red_mid.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..ed6a0fa979d20cba26b163e2a2660484d5685864
+GIT binary patch
+literal 166
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!93?!50ihlx9Ea{HEjtmSN`?>!lvI6-$0X`wF
+zQJEco_Vj;hNjmIp`ttoVkUCdS7sn8e>&X#cv+n1&or%7>TXJ3f-`{f|+6x%$soq{C
+zdiZy(!=t;mpU&j@{`&EHXO(~ZZ|#-#U?}~={_+R^^^IH{5)KRu`dbXo>Puhy3p9|y
+M)78&qol`;+0Kd#Xt^fc4
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/houses/wall_red_right.png b/assets/tiny_town/houses/wall_red_right.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..ee9ef048267321a8367932719ff460c71aa56b8c
+GIT binary patch
+literal 184
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!73?$#)eFPF<Nq6*hWMJ6X&;2Kn704F~@CkA4
+zp1mb1v*XX6etR{;Pc2D@y-lkvc@2QFfu1goAsp93dmMQW81OJVCyJ~RbCmGmYt(q=
+zpBi`h__OOLt>!YSbmx5*bJ_7!Xo=jnJ6_HX2P^`nMg$v)vwv1*4!U=)P4Ber(~tU#
+dpO?LzX|KOoN&B2-DLc?`22WQ%mvv4FO#p9vJ{AA~
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/houses/wall_wood_left.png b/assets/tiny_town/houses/wall_wood_left.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..b3cc264cb7e8a2c7ec1911f34c5f9655ea2480ab
+GIT binary patch
+literal 137
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!93?!50ihlx9Ea{HEjtmSN`?>!lvI6-$0X`wF
+zW!7f)YKE_t=IqV!+A}H54=AqT>Eal|aXq=?*8l(Z&QomX+~8M#^YdZS{%_8lzxlrf
+iYz$u==Ey0smtpEUEv<7a4$lGVVeoYIb6Mw<&;$UXa4ZA>
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/houses/wall_wood_mid.png b/assets/tiny_town/houses/wall_wood_mid.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..d3704362b1bca54c16ad7fdb3318fcff4f35caf1
+GIT binary patch
+literal 129
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!93?!50ihlx9Ea{HEjtmSN`?>!lvI6;>0X`wF
+zW!7e|mgelu@%sOe7o=9%)5S4_<9c!gD+^CTQlnT$Kto}8>p@Pn9TIamSeZB)wHO&*
+Xd{@m@SKiP8RL<b(>gTe~DWM4fVc8*R
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/houses/window_wood.png b/assets/tiny_town/houses/window_wood.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..a6e113ecc836efd4d419f81de7627a200b7c76fb
+GIT binary patch
+literal 170
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!73?$#)eFPF<Nq6*hWMJ6X&;2Kn704F~@Ck8!
+zwKS)D_Lc*u@03}a*{d1u&GD+6dsYP~>+I>`7{YNqnWL4dEkN9WBbB4kAV$(@j-!y8
+zL)&UYftCgdw^MGX1lqC$qz(s|1W0H%vo5;Z*vOi+fcX&Dj->|a3=A{a756UD?WhDA
+O$KdJe=d#Wzp$PzM5;C*^
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/objects/rock_curve.png b/assets/tiny_town/objects/rock_curve.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..17b44f9b2097f2edf24755a1a176365f7b28c020
+GIT binary patch
+literal 200
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!73?$#)eFPF<Nq6*hWMJ6X&;2Kn70Blg@Ck7R
+z(m@F|2TtGVp1nm)+hw(Rhc8fwu_VYZn8D%MjWi%9+|$J|gyXtySF~t@0grQb;&KfR
+z;{%?o2g3f(^5Fh?^6X)^Zj(uTZejuVCJ5#1NQyHsxL(p&cHp%P_k|2+gQr<?PjXp*
+r2Z%lC(>gO*e$L5#8A<Uvbrp=xt|H5iynE0Hw1UCY)z4*}Q$iB}b=gBS
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/objects/rock_large.png b/assets/tiny_town/objects/rock_large.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..e573c74c5506b2a28fc654f7215a0e33c9d924cd
+GIT binary patch
+literal 203
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!73?$#)eFPF<Nq6*hWMJ6X&;2Kn70Blg@Ck7R
+z(m@F|2TtGVp1nm)+hw(Rhc8fwu_VYZn8D%MjWi%9%G1R$gyXvEnTxy)1_DeMeit+z
+z^J|EG(8YZt`Txu#r>=7=vfM0lIx6hZrgN!bPVeOvId1C|4?Skt)9udGw(-jJi#>{8
+v?(*1fH>^y(`)l?hqb>7I?Pb^=cL(Y}Stn_`I5Y1n&=v+yS3j3^P6<r_(QQej
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/objects/tree_pine.png b/assets/tiny_town/objects/tree_pine.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..4bbe8cd5546ed1c609ca841824ed26778a7ba4ea
+GIT binary patch
+literal 175
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!93?!50ihlx9Ea{HEjtmSN`?>!lvI6-$0X`wF
+zK-zu2SIe<Xdo{zxHSBwVe8!R>zhDN3XE)M-97j(V#}JO|$q5N|2Y}!|qsNW^j6!AA
+z4M+C><>5KA{~B{=w8Eq3znFQ>tPgAM$kFKjfAtkV&!5#{e;EZ$3$C#<Jbop+Wa6J2
+R6M=>?c)I$ztaD0e0sv<vJ6Qk#
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/objects/tree_round.png b/assets/tiny_town/objects/tree_round.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..f53549560217eeac5562eb06665962ae77417804
+GIT binary patch
+literal 197
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!93?!50ihlx9Ea{HEjtmSN`?>!lvI6-$0X`wF
+zK-zu2SIe<Xdo{zxHSBwVe8!R>zhDN3XE)M-oN!MU#}JO|vd32QHW)CtUYu><;QmU4
+zmvfn1+Y31fk*0JjCY^%<J7y`(`o#V0NrUHs&kn_{yv016%BpKZb}pT&<m&a^*zKIF
+o@XmOfn>+LKzQyG6-PpTUe_w!F6W6oEXrL7gp00i_>zopr01hlZ8~^|S
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/objects/tree_trunk.png b/assets/tiny_town/objects/tree_trunk.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..bafb634edddc916c13cbb4e5f9cd9483197765e5
+GIT binary patch
+literal 192
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!73?$#)eFPF<Nq6*hWMJ6X&;2Kn704F~@Ck7R
+z(tC5fUM<aOIhN@@-^*Uj@Ob)pkTHxUL4Lsu4$p3+0XaUNE{-7_*OL=?O$!ap_;?c%
+zcnu8=&B|DfV;1lvCmSe>oHHmiGc#lC-od~a!ONyBa)d$ZgaB7cYnzb)Lo1W3Ba=he
+g1g#mz4mB_^7)nVh-xh0}4m6j+)78&qol`;+0Oz?fvj6}9
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/objects/villager.png b/assets/tiny_town/objects/villager.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..9c7c16a77f930464a375acbcb4527799b1a196e4
+GIT binary patch
+literal 242
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!73?$#)eFPF<Nq6*hWMJ6X&;2Kn706c!@Ck7R
+z())5e%bxrXOsIXmEN5?y*Q=#D2hZGPn02Sj+N@{JR$E2g>d6`fKy{2IL4Lsu4$p3+
+z0XaFIE{-7_*OPC^S{A2eWZcMOQ%H`|YBAI;j?(H7oMu`4Y>SD4a`Ce-r)FMm=$W}W
+zY;BaK@QE23OO`Cr;7plPQBtyHhqHulfSa((kv)qRFWxJ0VnbA1T-;WPBN41D8a=TJ
+k$6np#xubCH)m>?ZFA;8f;UA3W0_|n+boFyt=akR{0Hxws>;M1&
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/terrain/dirt.png b/assets/tiny_town/terrain/dirt.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..47bec7894f1a6e86d1c0edae8bbc4f972af6a894
+GIT binary patch
+literal 153
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!73?$#)eFPF<Nq6*hWMJ6X&;2Kn70Blg@CkAK
+zcXH18rjXR7VJ*ipUoFj<zT)~Epp>bni(?4K^<;xKCbs0{R1Rm)n~|QLH$6HJ9`!tV
+x^r+|2)`P5E4m|GS?Cydc9m+k7Qx~x@GkBks_dECb_j#ZJ44$rjF6*2UngC0-G710y
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/terrain/forest.png b/assets/tiny_town/terrain/forest.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..9f8471ab183cd7cc2fc9e3d7d90fa2bcb57be26f
+GIT binary patch
+literal 144
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!93?!50ihlx9Ea{HEjtmSN`?>!lvI6;>0X`wF
+z-8X7emxi?*%dGRu=L8BGdAc};a9mH0U}fRqo|SOqQl>*vs8|Ps=bET#tSVuLc6uCX
+oQfr&3kaTm^(#sA>kqMj(F(DdjlViLEfw~zyUHx3vIVCg!00E~dC;$Ke
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/terrain/grass.png b/assets/tiny_town/terrain/grass.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..e743c54239ad02d5d34f9b8ce3c98d5b9e4c8feb
+GIT binary patch
+literal 99
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!61|;P_|4#%`jKx9jP7LeL$-D$|WIbIRLo9le
+vb1bL*oZrZFz@_t9AhR2<glU3-Bm;wCAJe6ue~(816*73b`njxgN@xNAT%;Pc
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/terrain/rock.png b/assets/tiny_town/terrain/rock.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..3d500133b9d801695ef5fca76f77a236facea0d4
+GIT binary patch
+literal 166
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!93?!50ihlx9Ea{HEjtmSN`?>!lvI6-$0X`wF
+z2TtGVp1s9h%`hsnL$&l<AyC}a)5S4_<9c!gD+^CT5+k#K4lgfnYQ+El|Lfb9{@*{H
+zxpV)0$!QG{-T(jp<e3;zZ7#E7iI~Tly}~+&Hr$){-yr1p)lWqX4V7BllQz712Q-ku
+M)78&qol`;+06gtEK>z>%
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/village/fence.png b/assets/tiny_town/village/fence.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..11e1591173e66454c3132e6c78e8a7e235642404
+GIT binary patch
+literal 178
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!73?$#)eFPF<Nq6*hWMJ6X&;2Kn70Blg@Ck7R
+z(q-0Wua@TQ&GE8VGmI#)+7A?BED7=pW^j0RBMr!L^mK6y;kcfhaDXWyCPwA}kGMjE
+z!IUX63N;GM8f@trnwrwm(wdrz6333U9XodD*f9>afVmqDL&RGcO*l^+NHb+9{3ftB
+TUo1imXc&X1tDnm{r-UW|Zdx(G
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/village/house_door.png b/assets/tiny_town/village/house_door.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..a6e113ecc836efd4d419f81de7627a200b7c76fb
+GIT binary patch
+literal 170
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!73?$#)eFPF<Nq6*hWMJ6X&;2Kn704F~@Ck8!
+zwKS)D_Lc*u@03}a*{d1u&GD+6dsYP~>+I>`7{YNqnWL4dEkN9WBbB4kAV$(@j-!y8
+zL)&UYftCgdw^MGX1lqC$qz(s|1W0H%vo5;Z*vOi+fcX&Dj->|a3=A{a756UD?WhDA
+O$KdJe=d#Wzp$PzM5;C*^
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/village/house_window.png b/assets/tiny_town/village/house_window.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..b3cc264cb7e8a2c7ec1911f34c5f9655ea2480ab
+GIT binary patch
+literal 137
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!93?!50ihlx9Ea{HEjtmSN`?>!lvI6-$0X`wF
+zW!7f)YKE_t=IqV!+A}H54=AqT>Eal|aXq=?*8l(Z&QomX+~8M#^YdZS{%_8lzxlrf
+iYz$u==Ey0smtpEUEv<7a4$lGVVeoYIb6Mw<&;$UXa4ZA>
+
+literal 0
+HcmV?d00001
+
+diff --git a/assets/tiny_town/village/sign.png b/assets/tiny_town/village/sign.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..08636d5b93ef71a354985e28772f86eed6d93424
+GIT binary patch
+literal 139
+zcmeAS@N?(olHy`uVBq!ia0vp^0wB!93?!50ihlx9Ea{HEjtmSN`?>!lvI6-$0X`wF
+zQJEd~YKGmjw;VWqr(3Q$3n;GT>Eal|aXp!Xm5I%uP?kf2kD1X~SioQn6BEZrd5(r7
+i`|m0w+4pqMWnlQT-*`VOFAqOZ7lWs(pUXO@geCxdoFfGQ
+
+literal 0
+HcmV?d00001
+
+diff --git a/main.gd b/main.gd
+deleted file mode 100644
+index 35177957b30a8b35fc18239ae1f3d69e7af0dfee..0000000000000000000000000000000000000000
+--- a/main.gd
++++ /dev/null
+@@ -1,32 +0,0 @@
+-extends Node2D
+-
+-@onready var tilemap: TileMapLayer = $TileMapLayer
+-
+-const MAP_WIDTH := 100
+-const MAP_HEIGHT := 100
+-
+-func _ready():
+-	randomize()
+-	generate_world()
+-
+-	$Camera2D.position = Vector2(
+-		MAP_WIDTH * 16,
+-		MAP_HEIGHT * 16
+-	)
+-
+-func generate_world():
+-	for x in range(MAP_WIDTH):
+-		for y in range(MAP_HEIGHT):
+-			var r := randf()
+-			var source_id := 0
+-
+-			if r < 0.70:
+-				source_id = 0 # grass
+-			elif r < 0.85:
+-				source_id = 1 # forest
+-			elif r < 0.95:
+-				source_id = 2 # stone
+-			else:
+-				source_id = 3 # water
+-
+-			tilemap.set_cell(Vector2i(x, y), source_id, Vector2i(0, 0))
+diff --git a/project.godot b/project.godot
+index 599f7f30f4f5d1ff98777ad49ef5aec67aca620c..7758c0da6ff414d9769d67330a54450f3c68ef01 100644
+--- a/project.godot
++++ b/project.godot
+@@ -1,39 +1,39 @@
+ ; Engine configuration file.
+ ; It's best edited using the editor UI and not directly,
+ ; since the parameters that go here are not all obvious.
+ ;
+ ; Format:
+ ;   [section] ; section goes between []
+ ;   param=value ; assign values to parameters
+ 
+ config_version=5
+ 
+ [application]
+ 
+ config/name="LivingKingdom"
+-run/main_scene="uid://covuh0scwrx23"
++run/main_scene="res://scenes/Main.tscn"
+ config/features=PackedStringArray("4.6", "GL Compatibility")
+ config/icon="res://icon.svg"
+ 
+ [input]
+ 
+ cam_right={
+ "deadzone": 0.2,
+ "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"location":0,"echo":false,"script":null)
+ ]
+ }
+ cam_left={
+ "deadzone": 0.2,
+ "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":113,"location":0,"echo":false,"script":null)
+ ]
+ }
+ cam_up={
+ "deadzone": 0.2,
+ "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"key_label":0,"unicode":122,"location":0,"echo":false,"script":null)
+ ]
+ }
+ cam_down={
+ "deadzone": 0.2,
+ "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":115,"location":0,"echo":false,"script":null)
+ ]
+ }
+diff --git a/scenes/Main.tscn b/scenes/Main.tscn
+new file mode 100644
+index 0000000000000000000000000000000000000000..4ff038dd57dfff4cd0bf269ab83f92000ff83acf
+--- /dev/null
++++ b/scenes/Main.tscn
+@@ -0,0 +1,27 @@
++[gd_scene format=3 uid="uid://covuh0scwrx23"]
++
++[ext_resource type="Script" uid="uid://y3gu6a0p7xfi" path="res://scripts/main.gd" id="1_main"]
++[ext_resource type="Script" uid="uid://cb4xy4850eirp" path="res://scripts/camera_2d.gd" id="2_camera"]
++
++[node name="Main" type="Node2D" unique_id=2034550478]
++script = ExtResource("1_main")
++
++[node name="Camera2D" type="Camera2D" parent="." unique_id=2124540391]
++script = ExtResource("2_camera")
++
++[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1721284658]
++
++[node name="Nature" type="Node2D" parent="."]
++
++[node name="Village" type="Node2D" parent="." unique_id=926618826]
++
++[node name="Villagers" type="Node2D" parent="." unique_id=2073175926]
++
++[node name="HUD" type="CanvasLayer" parent="."]
++
++[node name="InfoLabel" type="Label" parent="HUD"]
++offsets/left = 16.0
++offsets/top = 16.0
++offsets/right = 280.0
++offsets/bottom = 92.0
++text = "Jour 1\nVillage : Riveterre\nPopulation : 5"
+diff --git a/camera_2d.gd b/scripts/camera_2d.gd
+similarity index 56%
+rename from camera_2d.gd
+rename to scripts/camera_2d.gd
+index 6ece1fa43d95aa3ddcd292e233ec2898f681a99c..39a63cef3b6f5a0032308876ed06efbdd51559b7 100644
+--- a/camera_2d.gd
++++ b/scripts/camera_2d.gd
+@@ -1,10 +1,12 @@
+ extends Camera2D
+ 
++# Caméra existante conservée : ZQSD/WASD déplacent la vue sur la grande carte.
++
+ @export var speed := 700.0
+ 
+-func _ready():
++func _ready() -> void:
+ 	make_current()
+ 
+-func _process(delta):
++func _process(delta: float) -> void:
+ 	var direction := Input.get_vector("cam_left", "cam_right", "cam_up", "cam_down")
+ 	position += direction * speed * delta
+diff --git a/camera_2d.gd.uid b/scripts/camera_2d.gd.uid
+similarity index 100%
+rename from camera_2d.gd.uid
+rename to scripts/camera_2d.gd.uid
+diff --git a/scripts/main.gd b/scripts/main.gd
+new file mode 100644
+index 0000000000000000000000000000000000000000..864d7a3f82f3c44356ac46fead57ef3f6df1811a
+--- /dev/null
++++ b/scripts/main.gd
+@@ -0,0 +1,263 @@
++extends Node2D
++
++# V2 jouable de LivingKingdom.
++# La carte reste procédurale, mais le village est composé de vrais sprites Tiny Town lisibles.
++
++const VillagerScript := preload("res://scripts/villager.gd")
++
++const MAP_WIDTH := 200
++const MAP_HEIGHT := 200
++const TILE_SIZE := 16
++const VILLAGER_COUNT := 5
++const VILLAGE_NAME := "Riveterre"
++const DAY_DURATION_SECONDS := 20.0
++const VILLAGE_CENTER_TILE := Vector2i(MAP_WIDTH / 2, MAP_HEIGHT / 2)
++const VILLAGE_SAFE_RADIUS := 18
++
++const SOURCE_GRASS := 0
++const SOURCE_FOREST := 1
++const SOURCE_ROCK := 2
++const SOURCE_DIRT := 3
++
++const TERRAIN_DEFINITIONS := [
++	{"source_id": SOURCE_GRASS, "path": "res://assets/tiny_town/terrain/grass.png"},
++	{"source_id": SOURCE_FOREST, "path": "res://assets/tiny_town/terrain/forest.png"},
++	{"source_id": SOURCE_ROCK, "path": "res://assets/tiny_town/terrain/rock.png"},
++	{"source_id": SOURCE_DIRT, "path": "res://assets/tiny_town/terrain/dirt.png"},
++]
++
++const TREE_TEXTURES := [
++	"res://assets/tiny_town/objects/tree_pine.png",
++	"res://assets/tiny_town/objects/tree_round.png",
++	"res://assets/tiny_town/objects/tree_trunk.png",
++]
++
++const ROCK_TEXTURES := [
++	"res://assets/tiny_town/objects/rock_large.png",
++	"res://assets/tiny_town/objects/rock_curve.png",
++]
++
++const HOUSE_LAYOUT := [
++	["res://assets/tiny_town/houses/roof_red_left.png", "res://assets/tiny_town/houses/roof_red_mid.png", "res://assets/tiny_town/houses/roof_red_right.png"],
++	["res://assets/tiny_town/houses/wall_red_left.png", "res://assets/tiny_town/houses/wall_red_mid.png", "res://assets/tiny_town/houses/wall_red_right.png"],
++	["res://assets/tiny_town/houses/window_wood.png", "res://assets/tiny_town/houses/door_wood.png", "res://assets/tiny_town/houses/window_wood.png"],
++]
++
++const FIRST_NAMES := ["Aline", "Bastien", "Clara", "Dorian", "Elise", "Firmin", "Gaelle", "Hugo"]
++const FAMILY_NAMES := ["Boisclair", "Pierrefeu", "Valbrun", "Ruisseau", "Hauteherbe", "Lenoir"]
++
++@onready var tilemap: TileMapLayer = $TileMapLayer
++@onready var camera: Camera2D = $Camera2D
++@onready var nature_root: Node2D = $Nature
++@onready var village_root: Node2D = $Village
++@onready var villagers_root: Node2D = $Villagers
++@onready var hud_label: Label = $HUD/InfoLabel
++
++var biome_noise := FastNoiseLite.new()
++var detail_noise := FastNoiseLite.new()
++var current_day := 1
++var elapsed_day_time := 0.0
++var forest_tiles: Array[Vector2i] = []
++var rock_tiles: Array[Vector2i] = []
++
++func _ready() -> void:
++	randomize()
++	_setup_scene_roots()
++	_setup_tilemap()
++	_setup_noise()
++	generate_world()
++	create_nature_details()
++	create_village()
++	create_villagers()
++	center_existing_camera_on_village()
++	_update_hud()
++
++func _process(delta: float) -> void:
++	# Le compteur avance en temps réel pour donner un premier rythme de simulation.
++	elapsed_day_time += delta
++	if elapsed_day_time >= DAY_DURATION_SECONDS:
++		elapsed_day_time -= DAY_DURATION_SECONDS
++		current_day += 1
++		_update_hud()
++
++func _setup_scene_roots() -> void:
++	# Le tri Y rend les sprites Tiny Town plus lisibles quand ils se chevauchent.
++	nature_root.y_sort_enabled = true
++	village_root.y_sort_enabled = true
++	villagers_root.y_sort_enabled = true
++
++func _setup_tilemap() -> void:
++	# Le TileSet est construit par code pour garder la scène légère et utiliser les assets Tiny Town.
++	var tile_set := TileSet.new()
++	tile_set.tile_size = Vector2i(TILE_SIZE, TILE_SIZE)
++
++	for definition in TERRAIN_DEFINITIONS:
++		var source := TileSetAtlasSource.new()
++		source.texture = load(definition["path"])
++		source.texture_region_size = Vector2i(TILE_SIZE, TILE_SIZE)
++		source.create_tile(Vector2i.ZERO)
++		tile_set.add_source(source, definition["source_id"])
++
++	tilemap.tile_set = tile_set
++
++func _setup_noise() -> void:
++	# FastNoiseLite regroupe naturellement les biomes en grandes zones cohérentes.
++	biome_noise.seed = randi()
++	biome_noise.noise_type = FastNoiseLite.TYPE_SIMPLEX
++	biome_noise.frequency = 0.023
++	biome_noise.fractal_octaves = 4
++	biome_noise.fractal_gain = 0.55
++
++	# Un second bruit affine les transitions sans casser les grands regroupements.
++	detail_noise.seed = randi()
++	detail_noise.noise_type = FastNoiseLite.TYPE_SIMPLEX
++	detail_noise.frequency = 0.075
++	detail_noise.fractal_octaves = 2
++	detail_noise.fractal_gain = 0.45
++
++func generate_world() -> void:
++	# Génère une carte complète de 200x200 cases avec herbe, forêt, roche et terre.
++	tilemap.clear()
++	forest_tiles.clear()
++	rock_tiles.clear()
++
++	for x in range(MAP_WIDTH):
++		for y in range(MAP_HEIGHT):
++			var position := Vector2i(x, y)
++			var source_id := _pick_biome_source(position)
++			tilemap.set_cell(position, source_id, Vector2i.ZERO)
++			if _is_near_village(position):
++				continue
++			if source_id == SOURCE_FOREST:
++				forest_tiles.append(position)
++			elif source_id == SOURCE_ROCK:
++				rock_tiles.append(position)
++
++func _pick_biome_source(tile_position: Vector2i) -> int:
++	var biome_value := biome_noise.get_noise_2d(tile_position.x, tile_position.y)
++	var detail_value := detail_noise.get_noise_2d(tile_position.x, tile_position.y) * 0.22
++	var value := biome_value + detail_value
++
++	if value < -0.30:
++		return SOURCE_ROCK
++	if value < -0.08:
++		return SOURCE_DIRT
++	if value < 0.30:
++		return SOURCE_GRASS
++	return SOURCE_FOREST
++
++func create_nature_details() -> void:
++	# Les biomes ne restent pas plats : des groupes de sprites montrent les forêts et rochers.
++	_clear_children(nature_root)
++	_spawn_grouped_objects(forest_tiles, TREE_TEXTURES, 90, 7, 1.65)
++	_spawn_grouped_objects(rock_tiles, ROCK_TEXTURES, 42, 5, 1.35)
++
++func _spawn_grouped_objects(source_tiles: Array[Vector2i], texture_paths: Array, cluster_count: int, cluster_size: int, sprite_scale: float) -> void:
++	if source_tiles.is_empty():
++		return
++
++	for cluster_index in range(cluster_count):
++		var origin := source_tiles.pick_random()
++		for object_index in range(randi_range(2, cluster_size)):
++			var tile_position := origin + Vector2i(randi_range(-2, 2), randi_range(-2, 2))
++			if not Rect2i(Vector2i.ZERO, Vector2i(MAP_WIDTH, MAP_HEIGHT)).has_point(tile_position):
++				continue
++			if _is_near_village(tile_position):
++				continue
++			_add_sprite(nature_root, texture_paths.pick_random(), _tile_to_world(tile_position), sprite_scale)
++
++func create_village() -> void:
++	# Le centre est volontairement dégagé pour que Riveterre soit évident au lancement.
++	_clear_children(village_root)
++	_paint_village_ground()
++	_add_paths()
++	_add_houses()
++	_add_fences_and_sign()
++
++func _paint_village_ground() -> void:
++	for x in range(VILLAGE_CENTER_TILE.x - 13, VILLAGE_CENTER_TILE.x + 14):
++		for y in range(VILLAGE_CENTER_TILE.y - 11, VILLAGE_CENTER_TILE.y + 12):
++			var tile_position := Vector2i(x, y)
++			if (tile_position - VILLAGE_CENTER_TILE).length() <= 15.0:
++				tilemap.set_cell(tile_position, SOURCE_GRASS, Vector2i.ZERO)
++
++func _add_paths() -> void:
++	# Chemins en terre en croix et petite place centrale.
++	for x in range(VILLAGE_CENTER_TILE.x - 14, VILLAGE_CENTER_TILE.x + 15):
++		for width in range(-1, 2):
++			tilemap.set_cell(Vector2i(x, VILLAGE_CENTER_TILE.y + width), SOURCE_DIRT, Vector2i.ZERO)
++	for y in range(VILLAGE_CENTER_TILE.y - 10, VILLAGE_CENTER_TILE.y + 11):
++		for width in range(-1, 2):
++			tilemap.set_cell(Vector2i(VILLAGE_CENTER_TILE.x + width, y), SOURCE_DIRT, Vector2i.ZERO)
++	for x in range(VILLAGE_CENTER_TILE.x - 3, VILLAGE_CENTER_TILE.x + 4):
++		for y in range(VILLAGE_CENTER_TILE.y - 3, VILLAGE_CENTER_TILE.y + 4):
++			tilemap.set_cell(Vector2i(x, y), SOURCE_DIRT, Vector2i.ZERO)
++
++func _add_houses() -> void:
++	# Quatre maisons Tiny Town bien séparées encadrent la place centrale.
++	_add_house(VILLAGE_CENTER_TILE + Vector2i(-9, -7), "Maison Nord-Ouest")
++	_add_house(VILLAGE_CENTER_TILE + Vector2i(6, -7), "Maison Nord-Est")
++	_add_house(VILLAGE_CENTER_TILE + Vector2i(-9, 5), "Maison Sud-Ouest")
++	_add_house(VILLAGE_CENTER_TILE + Vector2i(6, 5), "Maison Sud-Est")
++
++func _add_house(top_left_tile: Vector2i, building_name: String) -> void:
++	var root := Node2D.new()
++	root.name = building_name
++	root.position = _tile_to_world(top_left_tile)
++	village_root.add_child(root)
++
++	for row in range(HOUSE_LAYOUT.size()):
++		for column in range(HOUSE_LAYOUT[row].size()):
++			var part := Sprite2D.new()
++			part.texture = load(HOUSE_LAYOUT[row][column])
++			part.position = Vector2(column * TILE_SIZE, row * TILE_SIZE)
++			part.scale = Vector2(1.35, 1.35)
++			root.add_child(part)
++
++func _add_fences_and_sign() -> void:
++	for x in range(-7, 8):
++		if abs(x) <= 2:
++			continue
++		_add_sprite(village_root, "res://assets/tiny_town/village/fence.png", _tile_to_world(VILLAGE_CENTER_TILE + Vector2i(x, -5)), 1.0)
++		_add_sprite(village_root, "res://assets/tiny_town/village/fence.png", _tile_to_world(VILLAGE_CENTER_TILE + Vector2i(x, 5)), 1.0)
++	_add_sprite(village_root, "res://assets/tiny_town/village/sign.png", _tile_to_world(VILLAGE_CENTER_TILE + Vector2i(0, -4)), 1.35)
++
++func create_villagers() -> void:
++	_clear_children(villagers_root)
++	var village_center := _tile_to_world(VILLAGE_CENTER_TILE)
++	var movement_area := Rect2(village_center - Vector2(125.0, 95.0), Vector2(250.0, 190.0))
++
++	for index in range(VILLAGER_COUNT):
++		var villager = Node2D.new()
++		villager.set_script(VillagerScript)
++		villagers_root.add_child(villager)
++		villager.setup(_random_villager_name(), movement_area, village_center + Vector2(randf_range(-54.0, 54.0), randf_range(-38.0, 38.0)))
++
++func _random_villager_name() -> String:
++	return "%s %s" % [FIRST_NAMES.pick_random(), FAMILY_NAMES.pick_random()]
++
++func center_existing_camera_on_village() -> void:
++	# La Camera2D existante est conservée, centrée sur le village et dézoomée pour une lecture agréable.
++	camera.position = _tile_to_world(VILLAGE_CENTER_TILE)
++	camera.zoom = Vector2(0.62, 0.62)
++
++func _update_hud() -> void:
++	hud_label.text = "Jour %d\nVillage : %s\nPopulation : %d" % [current_day, VILLAGE_NAME, VILLAGER_COUNT]
++
++func _add_sprite(parent: Node, texture_path: String, world_position: Vector2, sprite_scale: float) -> Sprite2D:
++	var sprite := Sprite2D.new()
++	sprite.texture = load(texture_path)
++	sprite.position = world_position
++	sprite.scale = Vector2(sprite_scale, sprite_scale)
++	parent.add_child(sprite)
++	return sprite
++
++func _is_near_village(tile_position: Vector2i) -> bool:
++	return (tile_position - VILLAGE_CENTER_TILE).length() <= VILLAGE_SAFE_RADIUS
++
++func _clear_children(parent: Node) -> void:
++	for child in parent.get_children():
++		child.queue_free()
++
++func _tile_to_world(tile_position: Vector2i) -> Vector2:
++	return Vector2(tile_position.x * TILE_SIZE + TILE_SIZE * 0.5, tile_position.y * TILE_SIZE + TILE_SIZE * 0.5)
+diff --git a/main.gd.uid b/scripts/main.gd.uid
+similarity index 100%
+rename from main.gd.uid
+rename to scripts/main.gd.uid
+diff --git a/scripts/villager.gd b/scripts/villager.gd
+new file mode 100644
+index 0000000000000000000000000000000000000000..278d2ba754fcbaa8a00e0daeb9d0e92f792f5d83
+--- /dev/null
++++ b/scripts/villager.gd
+@@ -0,0 +1,60 @@
++extends Node2D
++
++# Habitant autonome : un sprite Tiny Town visible se promène autour du village.
++
++const VILLAGER_TEXTURE := preload("res://assets/tiny_town/objects/villager.png")
++const MIN_SPEED := 28.0
++const MAX_SPEED := 46.0
++const ARRIVAL_DISTANCE := 3.0
++
++var citizen_name := "Habitant"
++var movement_area := Rect2(Vector2.ZERO, Vector2(1.0, 1.0))
++var target_position := Vector2.ZERO
++var speed := 36.0
++var wait_time := 0.0
++var sprite: Sprite2D
++var name_label: Label
++
++func setup(new_name: String, new_movement_area: Rect2, start_position: Vector2) -> void:
++	citizen_name = new_name
++	movement_area = new_movement_area
++	position = start_position
++	speed = randf_range(MIN_SPEED, MAX_SPEED)
++	_build_visual()
++	_pick_new_target()
++
++func _process(delta: float) -> void:
++	if wait_time > 0.0:
++		wait_time -= delta
++		return
++
++	var direction := target_position - position
++	if direction.length() <= ARRIVAL_DISTANCE:
++		_pick_new_target()
++		return
++
++	position += direction.normalized() * speed * delta
++	if direction.x != 0.0:
++		sprite.flip_h = direction.x < 0.0
++
++func _build_visual() -> void:
++	# Le sprite est agrandi pour rester lisible avec la caméra dézoomée.
++	sprite = Sprite2D.new()
++	sprite.texture = VILLAGER_TEXTURE
++	sprite.scale = Vector2(1.8, 1.8)
++	add_child(sprite)
++
++	name_label = Label.new()
++	name_label.text = citizen_name
++	name_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
++	name_label.modulate = Color(0.08, 0.05, 0.03)
++	name_label.position = Vector2(-56.0, -34.0)
++	name_label.size = Vector2(112.0, 18.0)
++	add_child(name_label)
++
++func _pick_new_target() -> void:
++	target_position = Vector2(
++		randf_range(movement_area.position.x, movement_area.end.x),
++		randf_range(movement_area.position.y, movement_area.end.y)
++	)
++	wait_time = randf_range(0.15, 0.8)
