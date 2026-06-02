@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://covuh0scwrx23"]
+
+[ext_resource type="Script" uid="uid://y3gu6a0p7xfi" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="Script" uid="uid://cb4xy4850eirp" path="res://scripts/camera_2d.gd" id="2_camera"]
+
+[node name="Main" type="Node2D" unique_id=2034550478]
+script = ExtResource("1_main")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2124540391]
+script = ExtResource("2_camera")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1721284658]
+
+[node name="Nature" type="Node2D" parent="."]
+
+[node name="Village" type="Node2D" parent="." unique_id=926618826]
+
+[node name="Villagers" type="Node2D" parent="." unique_id=2073175926]
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="InfoLabel" type="Label" parent="HUD"]
+offsets/left = 16.0
+offsets/top = 16.0
+offsets/right = 280.0
+offsets/bottom = 92.0
+text = "Jour 1\nVillage : Riveterre\nPopulation : 5"
